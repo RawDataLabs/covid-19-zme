@@ -11,7 +11,16 @@ Flow(
       load(f'{BASE_URL}{CONFIRMED}'),
       load(f'{BASE_URL}{RECOVERED}'),
       load(f'{BASE_URL}{DEATHS}'),
-      load(f'{BASE_URL}{CONFIRMED_GLOBAL}'),
-      load(f'{BASE_URL}{DEATH_GLOBAL}'),
       dump_to_path('csse_covid_19_data')
+).results()[0]
+
+
+Flow(
+      load(f'{BASE_URL}{CONFIRMED_GLOBAL}'),
+      dump_to_path('csse_covid_19_data/confirmed_global/')
+).results()[0]
+
+Flow(
+      load(f'{BASE_URL}{DEATH_GLOBAL}'),
+      dump_to_path('csse_covid_19_data/deaths_global/')
 ).results()[0]
