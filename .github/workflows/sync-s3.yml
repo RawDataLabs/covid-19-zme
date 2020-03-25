@@ -1,7 +1,7 @@
 on:
   schedule:
     # - cron:  '*/10 * * * *'   # schedule daily every 10 mins?
-    - cron:  '0 */1 * * *'   # schedule daily every 1 hours?
+    - cron:  '0 */3 * * *'   # schedule daily every 3 hours
 
 jobs:
   sync-confirmed-global-s3-aws:
