@@ -39,3 +39,31 @@ jobs:
         id: ${{secrets.dhid}}
         username: ${{secrets.dhusername}}
         token: ${{secrets.dhtoken}}
+  sync-confirmed-global-s3-aws:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: jakejarvis/s3-sync-action@master
+      with:
+        args: --acl public-read --follow-symlinks --delete
+      env:
+        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: 'eu-north-1'  
+        SOURCE_DIR: 'csse_covid_19_data/time_series_covid19_confirmed_global.csv'      # confirmed 
+        DEST_DIR: 'confirmed_global'      
+  sync-deaths-global-s3-aws:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: jakejarvis/s3-sync-action@master
+      with:
+        args: --acl public-read --follow-symlinks --delete
+      env:
+        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: 'eu-north-1'   
+        SOURCE_DIR: 'csse_covid_19_data/time_series_covid19_deaths_global.csv'      # deaths 
+        DEST_DIR: 'deaths_global'      

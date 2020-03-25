@@ -1,0 +1,1813 @@
+{
+  "bytes": 333110,
+  "count_of_rows": 1985,
+  "hash": "2257b8177841871804401a2892850d69",
+  "profile": "data-package",
+  "resources": [
+    {
+      "bytes": 86981,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "d101bb47c3b4ac633cf6cdac99ac3f5c",
+      "name": "time_series_19-covid-Confirmed",
+      "path": "time_series_19-covid-Confirmed.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "1/22/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/23/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/24/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/25/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/26/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/27/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/28/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/29/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/30/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/31/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/1/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/2/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/3/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/4/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/5/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/6/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/7/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/8/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/9/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/10/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/11/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/12/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/13/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/14/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/15/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/16/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/17/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/18/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/19/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/20/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/21/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/22/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/23/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/24/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/25/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/26/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/27/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/28/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/29/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/1/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/2/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/3/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/4/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/5/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/6/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/7/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/8/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/9/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/10/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/11/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/12/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/13/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/14/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/15/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/16/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/17/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/18/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/19/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/20/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/21/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/22/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/23/20",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 82659,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "3cecec31e1d336597caa3071b4f786cd",
+      "name": "time_series_19-covid-Recovered",
+      "path": "time_series_19-covid-Recovered.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "1/22/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/23/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/24/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/25/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/26/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/27/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/28/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/29/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/30/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/31/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/1/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/2/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/3/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/4/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/5/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/6/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/7/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/8/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/9/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/10/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/11/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/12/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/13/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/14/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/15/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/16/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/17/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/18/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/19/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/20/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/21/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/22/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/23/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/24/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/25/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/26/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/27/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/28/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/29/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/1/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/2/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/3/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/4/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/5/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/6/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/7/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/8/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/9/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/10/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/11/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/12/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/13/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/14/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/15/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/16/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/17/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/18/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/19/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/20/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/21/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/22/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/23/20",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 79977,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "be0d783b9317c96ae024b654f639211b",
+      "name": "time_series_19-covid-Deaths",
+      "path": "time_series_19-covid-Deaths.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "1/22/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/23/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/24/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/25/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/26/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/27/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/28/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/29/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/30/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/31/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/1/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/2/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/3/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/4/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/5/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/6/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/7/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/8/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/9/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/10/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/11/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/12/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/13/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/14/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/15/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/16/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/17/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/18/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/19/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/20/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/21/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/22/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/23/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/24/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/25/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/26/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/27/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/28/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/29/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/1/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/2/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/3/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/4/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/5/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/6/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/7/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/8/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/9/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/10/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/11/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/12/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/13/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/14/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/15/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/16/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/17/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/18/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/19/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/20/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/21/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/22/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/23/20",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 45027,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "8a2009e745bb6b6117f0a72399d0880f",
+      "name": "time_series_covid19_confirmed_global",
+      "path": "time_series_covid19_confirmed_global.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "1/22/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/23/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/24/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/25/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/26/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/27/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/28/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/29/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/30/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/31/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/1/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/2/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/3/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/4/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/5/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/6/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/7/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/8/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/9/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/10/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/11/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/12/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/13/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/14/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/15/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/16/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/17/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/18/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/19/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/20/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/21/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/22/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/23/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/24/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/25/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/26/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/27/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/28/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/29/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/1/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/2/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/3/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/4/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/5/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/6/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/7/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/8/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/9/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/10/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/11/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/12/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/13/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/14/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/15/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/16/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/17/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/18/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/19/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/20/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/21/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/22/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/23/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/24/20",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 38466,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "7afe019c34307d4085b8ee4b16ed94c0",
+      "name": "time_series_covid19_deaths_global",
+      "path": "time_series_covid19_deaths_global.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Province/State",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Country/Region",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Lat",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Long",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "1/22/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/23/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/24/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/25/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/26/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/27/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/28/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/29/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/30/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "1/31/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/1/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/2/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/3/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/4/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/5/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/6/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/7/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/8/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/9/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/10/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/11/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/12/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/13/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/14/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/15/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/16/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/17/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/18/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/19/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/20/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/21/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/22/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/23/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/24/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/25/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/26/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/27/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/28/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "2/29/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/1/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/2/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/3/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/4/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/5/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/6/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/7/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/8/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/9/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/10/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/11/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/12/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/13/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/14/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/15/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/16/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/17/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/18/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/19/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/20/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/21/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/22/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/23/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/24/20",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}
