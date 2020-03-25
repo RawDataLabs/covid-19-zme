@@ -15,6 +15,7 @@ jobs:
     - run: |
         pip install -r requirements.txt
         python process.py
+        python load_rawdatasets.py
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
@@ -24,21 +25,6 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.gh }}
-  deploy:
-    needs: update
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '8.x'
-    - run: npm install -g data-cli
-    - run: data --version
-    - run: data push
-      env:
-        id: ${{secrets.dhid}}
-        username: ${{secrets.dhusername}}
-        token: ${{secrets.dhtoken}}
   sync-confirmed-global-s3-aws:
     runs-on: ubuntu-latest
     steps:
