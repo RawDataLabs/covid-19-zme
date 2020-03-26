@@ -1,11 +1,11 @@
 {
-  "bytes": 45027,
-  "count_of_rows": 241,
-  "hash": "e185ce8a4dd14dc63056d444f2fd01dd",
+  "bytes": 46800,
+  "count_of_rows": 245,
+  "hash": "1fbe893fecb631951d16dba7ca8edb74",
   "profile": "data-package",
   "resources": [
     {
-      "bytes": 45027,
+      "bytes": 46800,
       "dialect": {
         "caseSensitiveHeader": false,
         "delimiter": ",",
@@ -17,7 +17,7 @@
       },
       "encoding": "utf-8",
       "format": "csv",
-      "hash": "8a2009e745bb6b6117f0a72399d0880f",
+      "hash": "63f34c24ec7b32d599a0c7eb3d77d19e",
       "name": "time_series_covid19_confirmed_global",
       "path": "time_series_covid19_confirmed_global.csv",
       "profile": "tabular-data-resource",
@@ -360,6 +360,11 @@
           {
             "format": "default",
             "name": "3/24/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/25/20",
             "type": "integer"
           }
         ],
