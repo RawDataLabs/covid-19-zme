@@ -1,11 +1,11 @@
 {
-  "bytes": 46796,
-  "count_of_rows": 245,
-  "hash": "7736659b5053615c3661019bb75d88eb",
+  "bytes": 40108,
+  "count_of_rows": 233,
+  "hash": "8ac94b3a73a21ceced2b2e9d8ca685e4",
   "profile": "data-package",
   "resources": [
     {
-      "bytes": 46796,
+      "bytes": 40108,
       "dialect": {
         "caseSensitiveHeader": false,
         "delimiter": ",",
@@ -17,9 +17,9 @@
       },
       "encoding": "utf-8",
       "format": "csv",
-      "hash": "64558d39fad73e80058e177f42a3cbab",
-      "name": "time_series_covid19_confirmed_global",
-      "path": "time_series_covid19_confirmed_global.csv",
+      "hash": "4d512f42cc9a66ad8b9e9e34be1f3970",
+      "name": "time_series_covid19_recovered_global",
+      "path": "time_series_covid19_recovered_global.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
@@ -49,322 +49,317 @@
           },
           {
             "format": "default",
-            "name": "1/22/20",
+            "name": "1/22/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "1/23/20",
+            "name": "1/23/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "1/24/20",
+            "name": "1/24/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "1/25/20",
+            "name": "1/25/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "1/26/20",
+            "name": "1/26/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "1/27/20",
+            "name": "1/27/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "1/28/20",
+            "name": "1/28/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "1/29/20",
+            "name": "1/29/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "1/30/20",
+            "name": "1/30/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "1/31/20",
+            "name": "1/31/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/1/20",
+            "name": "2/1/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/2/20",
+            "name": "2/2/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/3/20",
+            "name": "2/3/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/4/20",
+            "name": "2/4/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/5/20",
+            "name": "2/5/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/6/20",
+            "name": "2/6/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/7/20",
+            "name": "2/7/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/8/20",
+            "name": "2/8/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/9/20",
+            "name": "2/9/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/10/20",
+            "name": "2/10/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/11/20",
+            "name": "2/11/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/12/20",
+            "name": "2/12/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/13/20",
+            "name": "2/13/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/14/20",
+            "name": "2/14/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/15/20",
+            "name": "2/15/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/16/20",
+            "name": "2/16/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/17/20",
+            "name": "2/17/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/18/20",
+            "name": "2/18/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/19/20",
+            "name": "2/19/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/20/20",
+            "name": "2/20/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/21/20",
+            "name": "2/21/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/22/20",
+            "name": "2/22/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/23/20",
+            "name": "2/23/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/24/20",
+            "name": "2/24/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/25/20",
+            "name": "2/25/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/26/20",
+            "name": "2/26/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/27/20",
+            "name": "2/27/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/28/20",
+            "name": "2/28/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "2/29/20",
+            "name": "2/29/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/1/20",
+            "name": "3/1/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/2/20",
+            "name": "3/2/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/3/20",
+            "name": "3/3/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/4/20",
+            "name": "3/4/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/5/20",
+            "name": "3/5/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/6/20",
+            "name": "3/6/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/7/20",
+            "name": "3/7/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/8/20",
+            "name": "3/8/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/9/20",
+            "name": "3/9/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/10/20",
+            "name": "3/10/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/11/20",
+            "name": "3/11/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/12/20",
+            "name": "3/12/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/13/20",
+            "name": "3/13/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/14/20",
+            "name": "3/14/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/15/20",
+            "name": "3/15/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/16/20",
+            "name": "3/16/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/17/20",
+            "name": "3/17/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/18/20",
+            "name": "3/18/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/19/20",
+            "name": "3/19/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/20/20",
+            "name": "3/20/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/21/20",
+            "name": "3/21/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/22/20",
+            "name": "3/22/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/23/20",
+            "name": "3/23/2020",
             "type": "integer"
           },
           {
             "format": "default",
-            "name": "3/24/20",
-            "type": "integer"
-          },
-          {
-            "format": "default",
-            "name": "3/25/20",
+            "name": "3/24/2020",
             "type": "integer"
           }
         ],

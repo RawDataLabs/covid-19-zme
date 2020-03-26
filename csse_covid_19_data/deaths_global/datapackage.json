@@ -1,11 +1,11 @@
 {
-  "bytes": 38466,
-  "count_of_rows": 241,
-  "hash": "e8269fe46226279d2b79fb63849116cd",
+  "bytes": 39922,
+  "count_of_rows": 245,
+  "hash": "4b21924b03827bfadf721e94097fdf4e",
   "profile": "data-package",
   "resources": [
     {
-      "bytes": 38466,
+      "bytes": 39922,
       "dialect": {
         "caseSensitiveHeader": false,
         "delimiter": ",",
@@ -17,7 +17,7 @@
       },
       "encoding": "utf-8",
       "format": "csv",
-      "hash": "7afe019c34307d4085b8ee4b16ed94c0",
+      "hash": "c8cdec6ce1a9d0a24de07db87bb11bb6",
       "name": "time_series_covid19_deaths_global",
       "path": "time_series_covid19_deaths_global.csv",
       "profile": "tabular-data-resource",
@@ -360,6 +360,11 @@
           {
             "format": "default",
             "name": "3/24/20",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "3/25/20",
             "type": "integer"
           }
         ],
