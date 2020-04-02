@@ -17,15 +17,14 @@ DEATH_US = 'time_series_covid19_deaths_US.csv'
 #       dump_to_path('csse_covid_19_data')
 # ).results()[0]
 
-
 Flow(
-      load(f'{BASE_URL}{CONFIRMED_US}'),
-      dump_to_path('csse_covid_19_data/confirmed_us/')
+  load(f'{BASE_URL}{CONFIRMED_US}'),
+  dump_to_path('csse_covid_19_data/confirmed_us/')
 ).results()[0]
 
 Flow(
-      load(f'{BASE_URL}{DEATH_US}'),
-      dump_to_path('csse_covid_19_data/deaths_us/')
+  load(f'{BASE_URL}{DEATH_US}'),
+  dump_to_path('csse_covid_19_data/deaths_us/')
 ).results()[0]
 
 # Flow(
