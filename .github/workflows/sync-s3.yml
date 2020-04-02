@@ -99,13 +99,13 @@ jobs:
         # !!!!!!!!!!!!
         # python update_google_sheet.py
     - run: |
-        pip install -r requirements.txt
-        python load_rawdatasets.py
+        pip install -r requirements.txt && \
+        python load_rawdatasets.py && \
         echo "done"
     - name: Commit files
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.email "action@github.com" && \
+        git config --local user.name "GitHub Action" && \
         git commit --allow-empty -m "Daily auto-update of the data" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
