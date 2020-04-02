@@ -100,7 +100,7 @@ jobs:
         # python update_google_sheet.py
     - run: |
         pip install -r requirements.txt && \
-        python load_rawdatasets.py && \
+        python process_column_add.py && \
         echo "done"
     - name: Commit files
       run: |

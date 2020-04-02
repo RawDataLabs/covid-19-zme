@@ -1,17 +1,14 @@
 from dataflows import Flow, load, dump_to_path, printer
+from datetime import timedelta, date
 
 BASE_URL = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/'
 CONFIRMED_US = 'time_series_covid19_confirmed_US.csv'
 DEATH_US = 'time_series_covid19_deaths_US.csv'
 
-# Flow(
-#       load(f'{BASE_URL}{CONFIRMED}'),
-#       load(f'{BASE_URL}{RECOVERED}'),
-#       load(f'{BASE_URL}{DEATHS}'),
-#       dump_to_path('csse_covid_19_data')
-# ).results()[0]
-
-extra_value = {'yesterday': '', 'today': ''}
+today_s = date.today() - timedelta(days=2)
+today = today_s.strftime('%-m/%-d/20') 
+yesterday_s =  today_s - timedelta(days=1)
+yesterday = yesterday_s.strftime('%-m/%-d/20') 
 
 def print_days(package):
     elems = package.pkg.descriptor['resources'][0]['schema']['fields'][-2:]
@@ -38,25 +35,22 @@ def add_dates_column_to_schema(package):
     yield from package
 
 def add_dates_column(row):
-    row['yesterday'] = row['3/31/20']
-    row['today'] = row['4/1/20']
-
-
-
-
-# Flow(
-#     load(f'csse_covid_19_data/confirmed_us/{CONFIRMED_US}'),
-#     # dump_to_path('confirmed_today.csv')
-  
-# # ).process()[1]
-# ).results()[0]
+    row['yesterday'] = row[today]
+    row['today'] = row[yesterday]
 
 
 Flow(
-    load(f'csse_covid_19_data/confirmed_us/{CONFIRMED_US}'),
+    load(f'{BASE_URL}{CONFIRMED_US}'),
     add_dates_column_to_schema,
     add_dates_column,
-    dump_to_path('confirmed_today.csv'),
-    # printer(num_rows=1, tablefmt='html')
+    dump_to_path('csse_covid_19_data/confirmed_us/'),
+).process()[1]
+
+
+Flow(
+    load(f'{BASE_URL}{DEATH_US}'),
+    add_dates_column_to_schema,
+    add_dates_column,
+    dump_to_path('csse_covid_19_data/deaths_us/'),
 ).process()[1]
 
