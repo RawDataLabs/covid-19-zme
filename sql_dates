@@ -1,0 +1,38 @@
+
+
+
+
+
+SELECT t1.province_state, t2.key as Dates, sum(t2.value) as Confirmed
+FROM s3_confirmed_us t1
+CROSS JOIN unnest (
+  array['3/30/20', '3/31/20', '4/1/20'],
+  array["3/30/20", "3/31/20", "4/1/20"]
+) t2 (key, value)
+
+group by province_state, t2.key
+order by province_state, t2.key 
+
+
+
+
+
+SELECT t1.province_state, t2.key as Dates, t2.value as Confirmed
+FROM s3_confirmed_us t1
+CROSS JOIN unnest (
+  array[(SELECT column_name
+FROM covid19.information_schema.columns
+WHERE table_name IN ('s3_deaths_us') 
+AND column_name like '%20')
+],
+array[(SELECT cast(column_name as date)
+FROM covid19.information_schema.columns
+WHERE table_name IN ('s3_deaths_us') 
+AND column_name like '%20')
+]
+
+
+) t2 (key, value)
+
+group by province_state, t2.key, t2.value
+order by province_state, t2.key , t2.value
