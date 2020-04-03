@@ -5,8 +5,9 @@ BASE_URL = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/css
 CONFIRMED_US = 'time_series_covid19_confirmed_US.csv'
 DEATH_US = 'time_series_covid19_deaths_US.csv'
 
-today_s = date.today() 
-# - timedelta(days=1)
+
+# processing dataset with -1 day lag
+today_s = date.today() - timedelta(days=1)
 today = today_s.strftime('%-m/%-d/20') 
 yesterday_s =  today_s - timedelta(days=1)
 yesterday = yesterday_s.strftime('%-m/%-d/20') 
@@ -36,8 +37,8 @@ def add_dates_column_to_schema(package):
     yield from package
 
 def add_dates_column(row):
-    row['yesterday'] = row[today]
-    row['today'] = row[yesterday]
+    row['yesterday'] = row[yesterday]
+    row['today'] = row[today]
 
 
 Flow(
