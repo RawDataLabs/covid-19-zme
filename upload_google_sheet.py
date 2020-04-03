@@ -18,6 +18,14 @@ gc = gspread.authorize(credentials)
 content = open( 'csse_covid_19_data/time_series_19-covid-Confirmed.csv', 'r').read()
 # content = open( os.environ.get('SOURCE_FILE'), 'r').read()
 
+
+# def addWorksheetsForStates():
+#   sh = gc.create('US_States_Working_ZME_CVD19')
+#   for x in xrange(1,53):
+#     worksheet = sh.add_worksheet(title="{state}", rows="1000", cols="20")
+#     pass
+
+
 gc.import_csv('1Kui1mg90hNUPg9awKeQcTS5XUQwm00Bn-A9Q6Ti5s_s', content)
 # gc.import_csv(os.environ.get('SPREADSHEET_ID'), content)
 
