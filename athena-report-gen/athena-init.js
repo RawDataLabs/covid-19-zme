@@ -4,8 +4,6 @@ const AthenaExpress = require("athena-express"),
   aws = require("aws-sdk"),
   awsCredentials = {
     region: "us-east-1",
-    accessKeyId: "AKIAIHV5B6DGMEXVCXGA",
-    secretAccessKey: "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"
   };
 
 aws.config.update(awsCredentials);
