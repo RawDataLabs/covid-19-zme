@@ -44,16 +44,16 @@ def add_dates_column(row):
 
 Flow(
     load(f'{BASE_URL}{CONFIRMED_US}'),
-    add_dates_column_to_schema,
-    add_dates_column,
+    # add_dates_column_to_schema,
+    # add_dates_column,
     dump_to_path('csse_covid_19_data/confirmed_us/'),
 ).process()[1]
 
 
 Flow(
     load(f'{BASE_URL}{DEATH_US}'),
-    add_dates_column_to_schema,
-    add_dates_column,
+    # add_dates_column_to_schema,
+    # add_dates_column,
     dump_to_path('csse_covid_19_data/deaths_us/'),
 ).process()[1]
 
