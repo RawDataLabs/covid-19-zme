@@ -8,7 +8,9 @@
   { "name": "Michigan",
     "query": "SELECT * FROM covid19.timeseries_pivoted_by_state where province_state = 'Michigan'"},
   { "name": "Massachusetts",
-    "query": "SELECT * FROM covid19.timeseries_pivoted_by_state where province_state = 'Massachusetts'"}
+    "query": "SELECT * FROM covid19.timeseries_pivoted_by_state where province_state = 'Massachusetts'"},
+  { "name": "Summary_All_States", "query": "SELECT * FROM covid19.summary_by_states"},
+  { "name": "Top_Infected_States", "query": "SELECT * FROM covid19.top_infected_states"}
 ]}
 
 

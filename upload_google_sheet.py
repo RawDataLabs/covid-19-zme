@@ -64,10 +64,26 @@ def addWorksheetsForState(state, data):
   print(" <<<<<<<<<<<<<" + wksid + " >>>>>>>>>>>>>>>" )
   print("https://docs.google.com/spreadsheets/d/" + wksid + "/edit" )
 
+def addWorksheetsForStateById(id, state, data):
+  wks = gc.open_by_key(id)
+  print("added worksheet for state :"+state)
+  # print(worksheet.id)
+  # 1nODJ-NFS_P3zwZGz6RuyIWLJoHKPKLS3S-hCbGVKwpk
+  gc.import_csv(wks.id, data)
+  print(" <<<<<<<<<<<<<" + wks.id + " >>>>>>>>>>>>>>>" )
+  print("https://docs.google.com/spreadsheets/d/" + wks.id + "/edit" )
+
 def addFileToGspread(filePath, state):
   content = open( filePath, 'r').read()
   addWorksheetsForState(state, content)
 
+
+# worksheets 
+# {
+#   filePath
+#   SPREADSHEET_ID
+#   query
+# }
 
 def listAllAthenaQueryResults():
   path = 'athena-report-gen/query-results'
