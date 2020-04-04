@@ -13,16 +13,16 @@ today = today_s.strftime('%-m/%-d/20')
 yesterday_s =  date.today() - timedelta(days=2)
 yesterday = yesterday_s.strftime('%-m/%-d/20') 
 
-def print_days(package):
-    elems = package.pkg.descriptor['resources'][0]['schema']['fields'][-2:]
-    extra_value.yesterday = elems[0]['name']
-    extra_value.today = elems[1]['name']
+# def print_days(package):
+#     elems = package.pkg.descriptor['resources'][0]['schema']['fields'][-2:]
+#     extra_value.yesterday = elems[0]['name']
+#     extra_value.today = elems[1]['name']
     
 def add_dates_column_to_schema(package):
     # Add a new field to the first resource
     elems = package.pkg.descriptor['resources'][0]['schema']['fields'][-2:]
-    yesterday = elems[0]['name']
-    today = elems[1]['name']
+    # yesterday = elems[0]['name']
+    # today = elems[1]['name']
 
     package.pkg.descriptor['resources'][0]['schema']['fields'].append(dict(
         name='yesterday',
