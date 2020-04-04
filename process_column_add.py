@@ -7,9 +7,10 @@ DEATH_US = 'time_series_covid19_deaths_US.csv'
 
 
 # processing dataset with -1 day lag
-today_s = date.today() - timedelta(days=1)
+today_s = date.today()  - timedelta(days=1)
 today = today_s.strftime('%-m/%-d/20') 
-yesterday_s =  today_s - timedelta(days=1)
+
+yesterday_s =  date.today() - timedelta(days=2)
 yesterday = yesterday_s.strftime('%-m/%-d/20') 
 
 def print_days(package):
