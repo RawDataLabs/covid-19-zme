@@ -1,0 +1,16 @@
+{"states":[
+  { "name": "New York",
+    "query": "SELECT * FROM covid19.timeseries_pivoted_by_state where province_state = 'New York'"},
+  { "name": "New Jersey",
+    "query": "SELECT * FROM covid19.timeseries_pivoted_by_state where province_state = 'New Jersey'"},
+  { "name": "California",
+    "query": "SELECT * FROM covid19.timeseries_pivoted_by_state where province_state = 'California'"},
+  { "name": "Michigan",
+    "query": "SELECT * FROM covid19.timeseries_pivoted_by_state where province_state = 'Michigan'"},
+  { "name": "Massachusetts",
+    "query": "SELECT * FROM covid19.timeseries_pivoted_by_state where province_state = 'Massachusetts'"}
+]}
+
+
+
+

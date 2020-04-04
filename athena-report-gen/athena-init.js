@@ -3,33 +3,59 @@
 const AthenaExpress = require("athena-express"),
   aws = require("aws-sdk"),
   awsCredentials = {
-    region: "us-east-1",
-    accessKeyId: "AKIAIHV5B6DGMEXVCXGA",
-    secretAccessKey: "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"
+    region: "eu-north-1",
+    accessKeyId: "AKIAYYEMGV4UORJO7UQO",
+    secretAccessKey: "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"
   };
 
 aws.config.update(awsCredentials);
 
 const athenaExpressConfig = {
   aws,
-  s3: "s3://my-bucket-for-storing-athena-results-us-east-1",
+  s3: "s3://covid-datasets/",
     getStats: true
 };
 
 const athenaExpress = new AthenaExpress(athenaExpressConfig);
 
-//Invoking a query on Amazon Athena
-(async () => {
+const fastcsv = require('fast-csv');
+const fs = require('fs');
+const fsExtra = require('fs-extra')
+
+fsExtra.emptyDirSync("./query-results/")
+
+
+
+async function query_athena(queryStr, stateName) {
   let query = {
-    sql: "SELECT elb_name, request_port, request_ip FROM elb_logs LIMIT 3",
-    db: "sampledb",
+    sql: queryStr,
+    db: "covid19",
     getStats: true 
   };
 
   try {
     let results = await athenaExpress.query(query);
-    console.log(results);
+    console.log(results.QueryExecutionId);
+    console.log(results.S3Location);
+    let ws = fs.createWriteStream("query-results/"+stateName+".csv");
+    fastcsv
+      .write(results.Items, { headers: true })
+      .pipe(ws);
+
   } catch (error) {
     console.log(error);
   }
+}
+//Invoking a query on Amazon Athena
+(async () => {
+  
+  let rawstates = fs.readFileSync('sql_timeseries_states.json');
+  let statesObj = JSON.parse(rawstates);
+  let states = statesObj.states;
+  console.log(states);
+  
+    for (var i = 0; i < states.length; i++) {
+      console.log(states[i].name, "   => qurey")
+      query_athena(states[i].query, i+"_"+states[i].name)
+    }
 })();
