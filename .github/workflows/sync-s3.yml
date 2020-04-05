@@ -1,113 +1,113 @@
-on:
-  schedule:
-    - cron:  '*/5 * * * *'   # schedule daily every 10 mins?
-    # - cron:  '0 */3 * * *'   # schedule daily every 3 hours
+# on:
+#   schedule:
+#     # - cron:  '*/5 * * * *'   # schedule daily every 10 mins?
+#     - cron:  '0 */3 * * *'   # schedule daily every 3 hours
 
-jobs:
-  sync-confirmed-us-s3-aws:
-    needs: [update]
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - uses: jakejarvis/s3-sync-action@master
-      with:
-        args: --acl public-read --follow-symlinks --delete
-      env:
-        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: 'eu-north-1'  
-        SOURCE_DIR: 'csse_covid_19_data/confirmed_us'      # confirmed 
-        DEST_DIR: 'confirmed_us'   
-  sync-deaths-us-s3-aws:
-    needs: [update]
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - uses: jakejarvis/s3-sync-action@master
-      with:
-        args: --acl public-read --follow-symlinks --delete
-      env:
-        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: 'eu-north-1'  
-        SOURCE_DIR: 'csse_covid_19_data/deaths_us'      # deaths 
-        DEST_DIR: 'deaths_us'      
-  # sync-confirmed-global-s3-aws:
-  #   needs: [update]
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - uses: actions/checkout@master
-  #   - uses: jakejarvis/s3-sync-action@master
-  #     with:
-  #       args: --acl public-read --follow-symlinks --delete
-  #     env:
-  #       AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-  #       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  #       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  #       AWS_REGION: 'eu-north-1'  
-  #       SOURCE_DIR: 'csse_covid_19_data/confirmed_global'      # confirmed 
-  #       DEST_DIR: 'confirmed_global'      
-  # sync-recovered-global-s3-aws:
-  #   needs: [update]
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - uses: actions/checkout@master
-  #   - uses: jakejarvis/s3-sync-action@master
-  #     with:
-  #       args: --acl public-read --follow-symlinks --delete
-  #     env:
-  #       AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-  #       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  #       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  #       AWS_REGION: 'eu-north-1'  
-  #       SOURCE_DIR: 'csse_covid_19_data/recovered_global'      # recovered 
-  #       DEST_DIR: 'recovered_global'      
-  # sync-deaths-global-s3-aws:
-  #   needs: [update]
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - uses: actions/checkout@master
-  #   - uses: jakejarvis/s3-sync-action@master
-  #     with:
-  #       args: --acl public-read --follow-symlinks --delete
-  #     env:
-  #       AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-  #       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  #       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  #       AWS_REGION: 'eu-north-1'   
-  #       SOURCE_DIR: 'csse_covid_19_data/deaths_global'      # deaths 
-  #       DEST_DIR: 'deaths_global'      
-  update:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - name: Build the data and create local changes
-      uses: actions/setup-python@v1
-      with:
-        python-version: '3.6.10'
-        architecture: x64
-        # !!!!!!!!!!!!
-        # !!!!!!!!!!!!
-      env:
-        GTOKEN: ${{ secrets.google_sa }}
-        # SOURCE_FILE:  'csse_covid_19_data/time_series_19-covid-Confirmed.csv'
-        SOURCE_FILE:  'csse_covid_19_data/globals/global.csv'
-        SPREADSHEET_ID:  '123te7r2gyiewfbk'
-        # !!!!!!!!!!!!
-        # !!!!!!!!!!!!
-        # python update_google_sheet.py
-    - run: |
-        pip install -r requirements.txt && \
-        python process_column_add.py && \
-        echo "done"
-    - name: Commit files
-      run: |
-        git config --local user.email "action@github.com" && \
-        git config --local user.name "GitHub Action" && \
-        git commit --allow-empty -m "Daily auto-update of the data" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.gh }}
+# jobs:
+#   sync-confirmed-us-s3-aws:
+#     needs: [update]
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@master
+#     - uses: jakejarvis/s3-sync-action@master
+#       with:
+#         args: --acl public-read --follow-symlinks --delete
+#       env:
+#         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+#         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#         AWS_REGION: 'eu-north-1'  
+#         SOURCE_DIR: 'csse_covid_19_data/confirmed_us'      # confirmed 
+#         DEST_DIR: 'confirmed_us'   
+#   sync-deaths-us-s3-aws:
+#     needs: [update]
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@master
+#     - uses: jakejarvis/s3-sync-action@master
+#       with:
+#         args: --acl public-read --follow-symlinks --delete
+#       env:
+#         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+#         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#         AWS_REGION: 'eu-north-1'  
+#         SOURCE_DIR: 'csse_covid_19_data/deaths_us'      # deaths 
+#         DEST_DIR: 'deaths_us'      
+#   # sync-confirmed-global-s3-aws:
+#   #   needs: [update]
+#   #   runs-on: ubuntu-latest
+#   #   steps:
+#   #   - uses: actions/checkout@master
+#   #   - uses: jakejarvis/s3-sync-action@master
+#   #     with:
+#   #       args: --acl public-read --follow-symlinks --delete
+#   #     env:
+#   #       AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+#   #       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#   #       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#   #       AWS_REGION: 'eu-north-1'  
+#   #       SOURCE_DIR: 'csse_covid_19_data/confirmed_global'      # confirmed 
+#   #       DEST_DIR: 'confirmed_global'      
+#   # sync-recovered-global-s3-aws:
+#   #   needs: [update]
+#   #   runs-on: ubuntu-latest
+#   #   steps:
+#   #   - uses: actions/checkout@master
+#   #   - uses: jakejarvis/s3-sync-action@master
+#   #     with:
+#   #       args: --acl public-read --follow-symlinks --delete
+#   #     env:
+#   #       AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+#   #       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#   #       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#   #       AWS_REGION: 'eu-north-1'  
+#   #       SOURCE_DIR: 'csse_covid_19_data/recovered_global'      # recovered 
+#   #       DEST_DIR: 'recovered_global'      
+#   # sync-deaths-global-s3-aws:
+#   #   needs: [update]
+#   #   runs-on: ubuntu-latest
+#   #   steps:
+#   #   - uses: actions/checkout@master
+#   #   - uses: jakejarvis/s3-sync-action@master
+#   #     with:
+#   #       args: --acl public-read --follow-symlinks --delete
+#   #     env:
+#   #       AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+#   #       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#   #       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#   #       AWS_REGION: 'eu-north-1'   
+#   #       SOURCE_DIR: 'csse_covid_19_data/deaths_global'      # deaths 
+#   #       DEST_DIR: 'deaths_global'      
+#   update:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@master
+#     - name: Build the data and create local changes
+#       uses: actions/setup-python@v1
+#       with:
+#         python-version: '3.6.10'
+#         architecture: x64
+#         # !!!!!!!!!!!!
+#         # !!!!!!!!!!!!
+#       env:
+#         GTOKEN: ${{ secrets.google_sa }}
+#         # SOURCE_FILE:  'csse_covid_19_data/time_series_19-covid-Confirmed.csv'
+#         SOURCE_FILE:  'csse_covid_19_data/globals/global.csv'
+#         SPREADSHEET_ID:  '123te7r2gyiewfbk'
+#         # !!!!!!!!!!!!
+#         # !!!!!!!!!!!!
+#         # python update_google_sheet.py
+#     - run: |
+#         pip install -r requirements.txt && \
+#         python process_column_add.py && \
+#         echo "done"
+#     - name: Commit files
+#       run: |
+#         git config --local user.email "action@github.com" && \
+#         git config --local user.name "GitHub Action" && \
+#         git commit --allow-empty -m "Daily auto-update of the data" -a
+#     - name: Push changes
+#       uses: ad-m/github-push-action@master
+#       with:
+#         github_token: ${{ secrets.gh }}
